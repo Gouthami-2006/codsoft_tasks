@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gauthami BR | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .home-text {
+            flex: 1;
+        }
+
+        .home-text h1 {
+            font-size: 48px;
+            color: #111827;
+        }
+
+        .home-text h1 span {
+            color: #0284c7;
+        }
+
+        .home-text h3 {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .home-text p {
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .home-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .home-image img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #0284c7;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: #111827;
+        }
+
+        .about,
+        .skills,
+        .projects,
+        .contact {
+            background: white;
+            margin: 20px 8%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #e0f2fe;
+            color: #075985;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .project-card {
+            background: #f8fafc;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #0284c7;
+        }
+
+        .project-card h3 {
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            text-align: center;
+            margin: 12px;
+        }
+
+        .contact a {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .home-text h1 {
+                font-size: 36px;
+            }
+
+            .home-image img {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>Gauthami BR</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="home" id="home">
+
+        <div class="home-text">
+
+            <h1>
+                Hello, I'm <span>Gauthami BR</span>
+            </h1>
+
+            <h3>
+                Computer Science Engineering Student
+            </h3>
+
+            <p>
+                I am a Computer Science Engineering student passionate about
+                programming, web development and building useful technology
+                solutions. I am continuously improving my technical skills
+                and looking for opportunities to learn and grow.
+            </p>
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
+
+            <a href="./gauthami_resume.pdf"
+               target="_blank">
+                View Resume
+            </a>
+
+            <a href="gauthami_resume.pdf"
+               download>
+                Download Resume
+            </a>
+
+        </div>
+
+
+        <div class="home-image">
+
+            <!-- YOUR PHOTO -->
+            <!-- Change gauthami.jpg if your actual JPG filename is different -->
+
+            <img src="./gauthami.jpg"
+                 alt="Gauthami"width="200px">
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p>
+            I am a Computer Science Engineering student with an interest in
+            software development, web technologies and artificial intelligence.
+            I enjoy learning new technologies and developing projects that
+            solve real-world problems.
+        </p>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">JDBC</div>
+            <div class="skill">Servlet</div>
+            <div class="skill">VS Code</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+
+        <div class="project-card">
+
+            <h3>
+                Farmers Market Management System
+            </h3>
+
+            <p>
+                A web-based system designed to connect farmers directly
+                with customers without intermediaries. Farmers can manage
+                products, prices and stock while customers can browse
+                products and place orders.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Java, JSP, Servlet, JDBC, MySQL
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>
+                AI-Based Automatic Video Summarization
+            </h3>
+
+            <p>
+                An AI-based application that processes uploaded videos,
+                extracts speech and generates a summarized version of
+                the video content.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Flask, Whisper, Transformers, FFmpeg
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>
+                Web-Based Hackathon Management System
+            </h3>
+
+            <p>
+                A web-based project designed to manage hackathon activities
+                and provide an organized platform for participants.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+
+        <p>
+            📧 Email:
+            <a href="mailto:gouthamigouthu368@gmail.com">
+                gouthamigouthu368@gmail.com
+            </a>
+        </p>
+
+
+        <p>
+            📱 Phone:
+            <a href="tel:7483742494">
+                7483742494
+            </a>
+        </p>
+
+
+        <p>
+            🔗 LinkedIn:
+            <a href="https://linkedin.com/in/gauthami-br-167868326"
+               target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+
+
+        <p>
+            💻 GitHub:
+            <a href="https://github.com/Gouthami-2006"
+               target="_blank">
+                GitHub Profile
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Gauthami BR. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
